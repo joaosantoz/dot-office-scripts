@@ -1,0 +1,6 @@
+# Build output
+dist/
+.idea
+
+# Node modules folder
+node_modules/
