@@ -1,0 +1,53 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->
+<!-- This file shows how to design a first-run page that provides a welcome screen to the user about the features of the add-in. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOT Scripts</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/. -->
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.1/css/fabric.min.css"/>
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="ms-font-m ms-welcome ms-Fabric">
+<header class="ms-welcome__header">
+    <img width="180" height="111" src="../../assets/dotgif.gif" alt="" />
+</header>
+<section id="sideload-msg" class="ms-welcome__main">
+    <h2 class="ms-font-xl">Please sideload your add-in to see app body.</h2>
+</section>
+<main id="app-body" class="ms-welcome__main" style="display: none;">
+    <h2 class="ms-font-xl">Utilize os botões abaixo para criar tabelas predefinidas</h2>
+    <h2 class="ms-font-xl">Imagem</h2>
+    <div class="buttons-container">
+        <button role="button" id="imgcenter">
+            <span class="ms-Button-label">Centro</span>
+        </button>
+        <button role="button" id="imgside">
+            <span class="ms-Button-label">Ao Lado do texto</span>
+        </button>
+        <button role="button" id="imgcentercaption">
+            <span class="ms-Button-label">Centro / Legenda</span>
+        </button>
+        <button role="button" id="imgupside">
+            <span class="ms-Button-label">Acima do texto</span>
+        </button>
+        <button role="button" id="iconsidetext">
+            <span class="ms-Button-label">Ícone com texto</span>
+        </button>
+    </div>
+</main>
+</body>
+
+</html>
